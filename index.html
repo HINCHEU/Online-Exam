@@ -14,61 +14,54 @@
 <body>
    <div class="container">
         <div class="w3-container">
-            <h3 id="q1">Question 1 of 10
-                : (3pt)</h3>
-            <p id="">Inside which HTML element do we put the JavaScript?</p>
+            <h3 id="q1">Question 1 of 10: (4pt)</h3>
+            <p id="question">Inside which HTML element do we put the JavaScript?</p>
             <div class="third-container">          
-               <div class="qs">
+               <div class="qs" id="qs">
                 <p>
-                    <input class="checkbox-round" onclick="fnq1_1()" type="checkbox" name="" id="q1_1">
-                    <label for="">scripting</label>
+                    <input class="checkbox-round"  type="checkbox" name="" id="q1_1">
+                    <label for=""><p><</p> script<p>></p></label>
                </div>
-                <div class="qs">
+                <div class="qs" id="qs">
                     <p>
-                        <input class="checkbox-round" onclick="fnq1_2()" type="checkbox" name="" id="q1_2">
-                        <label for="">js</label>
+                        <input  class="checkbox-round"  type="checkbox" name="" id="q1_2">
+                        <label for=""><p><</p> js <p>></p></label>
                     </p>
                 </div>
-                <div class="qs">
+                <div class="qs" id="qs">
                     <p>
-                        <input class="checkbox-round" onclick="fnq1_3()" type="checkbox" name="" id="q1_3">
-                        <label for="">script</label>
+                        <input  class="checkbox-round"  type="checkbox" name="" id="q1_3">
+                        <label for=""><p><</p>scripting<p>></p></label>
                     </p>
                 </div>             
             </div>
-            <button class="w3-button" onclick="fnClick()">Submit</button>
+            <h3 id="q1">Question 2 of 10: (4pt)</h3>
+            <p id="question">Where is the correct place to insert a JavaScript?
+            </p>
+            <div class="third-container">          
+               <div class="qs" id="qs">
+                <p>
+                    <input class="checkbox-round"  type="checkbox" name="" id="q2_1">
+                    <label for=""><p>The <</p> head<p>> section</p></label>
+               </div>
+                <div class="qs" id="qs">
+                    <p>
+                        <input  class="checkbox-round"  type="checkbox" name="" id="q2_2">
+                        <label for=""><p>Both  1 and 3 answer</p></label>
+                    </p>
+                </div>
+                <div class="qs" id="qs">
+                    <p>
+                        <input  class="checkbox-round"  type="checkbox" name="" id="q2_3">
+                        <label for=""><p>The<</p>Body<p>>section</p></label>
+                    </p>
+                </div>             
+            </div>
+            <button class="w3-button" onclick="fnClick() ">Submit</button>
                 <p id="rs" > :Result</p>
         </div>
    </div>
-
-    <script>
-            var q1_1 = document.getElementById("q1_1");
-            var q1_2 = document.getElementById("q1_2");
-            var q1_3 = document.getElementById("q1_3");
-            var cc =document.getElementById("container");
-            var sum1=0
-            function fnq1_1(){
-                q1_2.checked = false;
-                q1_3.checked = false;
-
-                sum1 = 1;
-            }
-            function fnq1_2(){
-                q1_1.checked = false;
-                q1_3.checked = false;
-                sum1 = 0;
-            }
-            function fnq1_3(){
-                q1_1.checked = false;
-                q1_2.checked = false;
-                sum1 = 0;
-            }
-            function fnClick(){
-                q1_1.disabled = true;
-                q1_2.disabled = true;
-                q1_3.disabled = true;
-                rs.innerHTML=sum1;
-            }
+    <script src="index.js">
     </script>
 </body>
 </html>
